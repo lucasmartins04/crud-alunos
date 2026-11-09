@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 35px;
+}
+
+.container {
+    background-color: rgb(250, 250, 250);
+    padding: 20px 20px 60px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(83, 83, 83);
+    position: relative;
+    overflow: hidden;
+}
+
+#listaAlunos {
+    margin-top: 20px;
+}
+
+.buttons {
+    background-color: rgb(190, 190, 190);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 100%;
+    border-top: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#cadastroForm {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#cadastroForm label {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#cadastroForm input {
+    width: 90%;
+    height: 30px;
+}
+
+.form-title  {
+    font-family: jetbrains-mono, monospace;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    background-color: #dfdddd;
+    border: 1px solid #b4b3b3;
+    border-radius: 7px;
+}
+#submitButton {
+    background-color: #0a8574;
+    color: white;
+    border: none;
+}
+
+.topo-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topo-lista h2 {
+    margin: 0;
+}
+
+#pesquisalabel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#alunosList {
+    width: 100%;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+}
+
+th {
+    background-color: #f4f6fc;
+}
+
+.aluno-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aluno-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#submitButton,
+#atualizarButton {
+    width: 200px;
+}

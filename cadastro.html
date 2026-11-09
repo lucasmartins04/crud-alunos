@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cruds.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Alunos</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-title">Cadastro de Alunos</h1>
+
+        <form id="cadastroForm">
+
+            <label for="nome">Nome Completo:
+                <input placeholder="Digite o nome completo" type="text" id="nome" name="nome" required>
+            </label>
+
+            <label for="email">Email:
+                <input placeholder="Digite o email" type="email" id="email" name="email" required>
+            </label>
+
+            <label for="telefone">Telefone:
+                <input placeholder="Digite o telefone" type="tel" id="telefone" name="telefone" required>
+            </label>
+
+            <label for="Cidade">Cidade:
+                <input placeholder="Digite a cidade" type="text" id="Cidade" name="Cidade" required>
+            </label>
+
+            <label for="estado">Estado:
+                <input placeholder="Digite o estado" type="text" id="estado" name="estado" required>
+            </label>
+
+            <label for="cep">CEP:
+                <input placeholder="Digite o CEP" type="text" id="cep" name="cep" required>
+            </label>
+
+            <div class="buttons">
+    <button class="limpar" type="reset">Limpar Campos</button>
+
+    <button id="submitButton" type="submit">Cadastrar</button>
+
+    <button id="atualizarButton" type="button"
+    style="visibility: hidden;">
+    Atualizar
+</button>
+</div>
+        </form>
+    </div>
+
+    <div id="listaAlunos" class="container">
+
+        <div class="topo-lista">
+            <h2 class="form-title">Alunos cadastrados</h2>
+
+            <div id="pesquisalabel">
+                <label for="search" class="form-label">Buscar aluno</label>
+                <input type="text" id="search" name="search" placeholder="Buscar por nome ou e-mail">
+            </div>
+        </div>
+
+        <div id="alunosList">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade / UF</th>
+                        <th>CEP</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaAlunos">
+                    <!-- Alunos serão exibidos aqui -->
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
